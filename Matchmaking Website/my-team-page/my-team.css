@@ -1,0 +1,132 @@
+:root{
+    --poppins:"Poppins";
+    --gochi-hand:"Gochi Hand";
+    --itim:"Itim";
+    --yellow-bee:#FFCB37;
+    --black-bee:#1E1E1E;
+}
+body{
+    margin: 0;
+    padding-bottom: 100px;
+    padding-top: 2.5rem;
+    background-color: white;
+}
+.header-section{
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    background-color: var(--yellow-bee);
+    position: fixed; 
+    top: 0; 
+    z-index: 999;
+    transition: top 0.3s; 
+}
+.icons-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    width: 100%;
+}
+.bee-logo{
+    width: 2.3em;
+    height: 2.3em;
+}
+
+.academic-organizations-plus-title-cont{
+    max-width: 768px;
+    margin: 0 auto;
+}
+.academic-organization-title{
+    padding: 2em 1em;
+    text-align: center;
+    font-family: var(--poppins);
+    font-weight: bold;
+}
+.logo {
+    width: 100px;
+}
+.academic-organizations-cont{
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+.proponents{
+    background-color: var(--yellow-bee);
+}
+.developers{
+    background-color: white;
+}
+.title{
+    font-family: var(--poppins);
+}
+.proponents-cont,.developers-cont{
+    max-width: 50em;
+    margin: 0 auto;
+}
+.proponents-cont{
+    padding-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 2em;
+}
+.developers-cont{
+    padding: 2em 1em;
+}
+.img-cont{
+    padding-top: 2rem;
+    /* padding-top: 5rem;
+    margin: 2rem; */
+}
+.IMAGES{
+    position: relative;
+    max-width: 48 rem;
+    margin: 0 auto;
+}
+.image{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto ;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem #D8D4C3;
+    border-radius: 0.5rem;
+   
+}
+
+.image img{
+    flex: 1 0 100%;
+    scroll-snap-align: start ;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+.image-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.image-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--white);
+    opacity: 60%;
+    transition: opacity ease 250ms;
+}
+.projdesc{
+    font-family: var(--poppins);
+    margin-top: 5em;
+    font-size: 0.8rem;
+    text-align: justify;
+    max-width: 25em;
+}

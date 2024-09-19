@@ -1,0 +1,124 @@
+:root{
+    --poppins:"Poppins";
+    --gochi-hand:"Gochi Hand";
+    --itim:"Itim";
+    --background-color:#FFCB37;
+    --black-bee:#1E1E1E;
+}
+body{
+    background-color: var(--background-color);
+}
+p{
+    margin: 0;
+}
+.hexagon__org-logo-section{
+    position: absolute;
+    bottom: -0.3em;
+    left: -1em;
+    z-index: -1;
+}
+.elc-logo{
+    max-width: 10em;
+}
+.organization-logo{
+    max-width: 5em;
+}
+.elc-logo{
+    position: absolute;
+    bottom: 2.8em;
+    left: 6em;
+    display: none;
+}
+.organization-logo-a-tag{
+    position: absolute;
+    bottom: 3.5em;
+    left: 3.5em;
+}
+
+.section-container{
+    display: flex;
+    flex-direction: column;
+    height: 40.5rem;
+    align-items: center;
+}
+.header-section{
+    height: 17%;
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+}
+.icons-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    width: 100%;
+}
+.main-section{
+    height: 83%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    align-items: center;
+    max-width: 460px;
+}
+.bee-logo{
+    width: 2.3em;
+    height: 2.3em;
+}
+.boom,.your-match{
+    font-family: var(--poppins);
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.your-match{
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+.program{
+    font-family: var(--poppins);
+    color: white;
+    font-weight: bold;
+    font-size: 2.2rem;
+    -webkit-text-stroke: 1px var(--black-bee);
+    text-align: center;
+    filter: drop-shadow(3px 3px 0px var(--black-bee));
+    padding: 0em 0.5em;
+    animation: fly 0.3s ease-in-out;
+    @media (max-width:321px) {
+        font-size: 2rem;
+    }
+}
+@keyframes fly{
+    0%{
+        transform: scale(0);
+    }
+}
+.more-information,.take-test-again{
+    border: none;
+    font-family: var(--poppins);
+    font-weight: 600;
+    border-radius: 20rem;
+    font-size: 0.6rem;
+    padding: 1em 2em;
+    width: 100%;
+}
+.button-container a {
+    width: 100%;
+}
+.button-container button{
+    width: 100%;
+}
+.button-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+    width: 8em;
+    padding-top: 1em;
+    align-items: center;
+}
+.take-test-again{
+    background-color: #DAA101;
+}

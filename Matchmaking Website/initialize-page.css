@@ -1,0 +1,104 @@
+:root{
+    --poppins:"Poppins";
+    --gochi-hand:"Gochi Hand";
+    --itim:"Itim";
+    --background-color:#FFCB37;
+    --black-bee:#1E1E1E;
+}
+body{
+    background-color: var(--background-color);
+}
+.text{
+    font-size: 3.2rem;
+    fill: white;
+    font-family: var(--gochi-hand);
+    stroke: var(--black-bee);
+    stroke-width: 2px;
+    filter: drop-shadow(2px 5px 0px black);
+}
+#curve{
+    fill: transparent;
+}
+.bee-logo{
+    width: 3.5em;
+    height: 3.5em;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.cards-cont{
+    padding: 0em 2em;
+}
+.take-the-test-btn{
+    border: none;
+    background-color: #1E1E1E;
+    font-family: var(--poppins);
+    font-weight: 500;
+    border-radius: 20rem;
+    font-size: 0.7rem;
+    padding: 0.7em 2em;
+    color: white;
+    margin-top: 1.3em;
+}
+.bee-logo{
+    transition: all 0.5s;
+    animation: fly 4s infinite;
+}
+@keyframes fly{
+    50%{
+        transform: translateY(-1em);
+    }
+}
+.initialization-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    gap: 0.3em;
+}
+.section-container{
+    display: flex;
+    flex-direction: column;
+    height: 40.5rem;
+}
+.header-section{
+    height: 15%;
+}
+.main-section{
+    height: 60%;
+}
+.footer-section{
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    justify-content: center;
+}
+.iassc-logo{
+    max-width: 3.5em;
+}
+.mathsoc-logo{
+    max-width: 2.5em;
+}
+.iassc-x-mathsoc{
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+}
+.cross{
+    font-family: var(--poppins);
+    font-weight: 500;
+    font-size: 1rem;
+}
+.initiated-by{
+    font-family: var(--poppins);
+    font-weight: 400;
+    font-size: 0.6rem;
+    width: 20em;
+    text-align: center;
+}
